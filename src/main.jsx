@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 				element: <Contact />,
 			}],
 	},
-]);
+], { basename: import.meta.env.DEV ? '/' : '/React-Router-testing/' });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
